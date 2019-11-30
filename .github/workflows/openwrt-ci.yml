@@ -95,9 +95,9 @@ jobs:
           # 
 
           # 编译x64固件:
-          # cat >> .config <<EOF
-          #   CONFIG_TARGET_bcm53xx=y
-          #   CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
+          cat >> .config <<EOF
+          CONFIG_TARGET_bcm53xx=y
+          CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
           #   CONFIG_DEFAULT_luci-app-wol=y
           #   CONFIG_DEFAULT_luci-app-xlnetacc=y
           #   CONFIG_DEFAULT_luci-app-zerotier=y
@@ -123,10 +123,10 @@ jobs:
           #   CONFIG_USES_DEVICETREE=y
           #   CONFIG_USES_SQUASHFS=y
           #   CONFIG_NAND_SUPPORT=y
-          #   CONFIG_arm=y
-          #   CONFIG_arm_v7=y
+          CONFIG_arm=y
+          CONFIG_arm_v7=y
           #   CONFIG_ARCH="arm"  
-          # EOF
+          EOF
 
           # 固件压缩:
           # cat >> .config <<EOF
