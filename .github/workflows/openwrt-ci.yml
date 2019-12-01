@@ -125,7 +125,7 @@ jobs:
           CONFIG_NAND_SUPPORT=y
           CONFIG_arm=y
           CONFIG_arm_v7=y
-          #   CONFIG_ARCH="arm"  
+          CONFIG_ARCH="arm"  
           EOF
 
           # 固件压缩:
